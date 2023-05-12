@@ -51,8 +51,14 @@ class _MainDrawerState extends State<MainDrawer> {
                         style: Theme.of(context).textTheme.headline2,
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 30,),
-                      
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Divider(
+                          color: Theme.of(context).primaryColor, thickness: 3),
+                     const SizedBox(
+                        height: 30,
+                      ),
                     ],
                   )),
               SizedBox(
@@ -60,11 +66,10 @@ class _MainDrawerState extends State<MainDrawer> {
               ),
 
               MainDrawerItem(
-                backgroundColor:Theme.of(context).indicatorColor,
+                backgroundColor: Colors.orangeAccent,
                 handler: () {
                   Navigator.of(context)
                       .pushReplacementNamed(HomeScreen.routeName);
-                  
                 },
                 icon: (Icons.home),
                 iconColor: Colors.white,
@@ -75,7 +80,7 @@ class _MainDrawerState extends State<MainDrawer> {
               ),
 
               MainDrawerItem(
-                backgroundColor: Theme.of(context).primaryColor,
+                  backgroundColor: Theme.of(context).primaryColor,
                   handler: () {
                     Navigator.of(context).pushNamed(ELearningScreen.routeName);
                   },
@@ -86,7 +91,7 @@ class _MainDrawerState extends State<MainDrawer> {
                   ),
                   icon: Icons.school_rounded),
               MainDrawerItem(
-                backgroundColor: Theme.of(context).indicatorColor,
+                  backgroundColor: Colors.orangeAccent,
                   handler: () {
                     Navigator.of(context)
                         .pushNamed(StudentInfoScreen.routeName);
@@ -107,7 +112,8 @@ class _MainDrawerState extends State<MainDrawer> {
               //   thickness: 6,
               // ),
 
-              MainDrawerItem(backgroundColor:Theme.of(context).indicatorColor,
+              MainDrawerItem(
+                  backgroundColor: Colors.orangeAccent,
                   handler: () {},
                   iconColor: Colors.white,
                   textWidget: Text(
@@ -116,13 +122,13 @@ class _MainDrawerState extends State<MainDrawer> {
                   ),
                   icon: Icons.settings),
               MainDrawerItem(
-                backgroundColor: Theme.of(context).primaryColor,
+                  backgroundColor: Theme.of(context).primaryColor,
                   handler: () {
                     Navigator.pushNamed(context, LoginScreen.routeName);
-                  setState(() {
-                    LoginScreen.emailController.clear();
-                  LoginScreen.passwordController.clear();
-                  });
+                    setState(() {
+                      LoginScreen.emailController.clear();
+                      LoginScreen.passwordController.clear();
+                    });
                   },
                   iconColor: Colors.red,
                   textWidget: Text(

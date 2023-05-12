@@ -108,13 +108,12 @@ class _StudentInfoScreenState extends State<StudentInfoScreen> {
                           infoColor: Color(0xFFD5CEA3),
                           //    infoicon: Icons.confirmation_num_outlined,
                           infotext: "العنوان"),
-                           
                       StudentInfoItem(
                           infoData: studentinfo['student']['nationality'],
                           infoColor: Color(0xFF678983),
                           //       infoicon: Icons.numbers_rounded,
                           infotext: "الجنسية"),
-                          StudentInfoItem(
+                      StudentInfoItem(
                           infoData: studentinfo['student']['birthGovernorate'],
                           infoColor: Color(0xFFD5CEA3),
                           //    infoicon: Icons.confirmation_num_outlined,

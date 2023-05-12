@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           SizedBox(
             height: 150,
           ),
-          Text("WELCOME TO THIET",style: Theme.of(context).textTheme.headline2,),
+          Text("Bright Minds",style: Theme.of(context).textTheme.headline2,),
           Container(
             child: Center(
                 child: Image.asset(
@@ -113,11 +113,17 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
             color: Theme.of(context).primaryColor,
             onPressed: () {
+          
+
               print(LoginScreen.emailController.text);
               print(LoginScreen.passwordController.text);
               login();
+          //     Navigator.pushNamed(context, HomeScreen.routeName,
+          // );
             },
-            child: Text(
+            child:
+            
+             Text(
               " تسجيل الدخول ",
               style: Theme.of(context).textTheme.headline1,
             ),
@@ -140,13 +146,16 @@ print(dataAuthUrl);
       // var decode = json.decode(response.body);
      // print(decode);
       Navigator.pushNamed(context, HomeScreen.routeName,
-          arguments: dataAuthUrl);
+           );
       AwesomeDialog(
+        
               title: "تم تسجيل الدخول بنجاح",
               context: context,
               dialogType: DialogType.success,
               animType: AnimType.rightSlide,
-              width: 1800)
+              width: 1800,   btnCancel: ElevatedButton(onPressed: (){
+Navigator.of(context).pop();
+              }, child: Text("إغلاق")))
           .show();
     } else {
       AwesomeDialog(
@@ -154,7 +163,10 @@ print(dataAuthUrl);
               context: context,
               dialogType: DialogType.error,
               animType: AnimType.rightSlide,
-              width: 1800)
+              width: 1800,
+              btnCancel: ElevatedButton(onPressed: (){
+Navigator.of(context).pop();
+              }, child: Text("إغلاق")))
           .show();
     }
   }

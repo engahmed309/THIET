@@ -7,7 +7,6 @@ import '/screens/student_info_screen.dart';
 import '/screens/subJect_details_screen.dart';
 import '/screens/subject_table_screen.dart';
 import '/screens/test.dart';
-
 import '/screens/home_screen.dart';
 
 void main() {
@@ -52,13 +51,13 @@ class _MyAppState extends State<MyApp> {
       routes: {
         TestScreen.routeName: (context) => const TestScreen(),
         ELearningScreen.routeName: (context) => const ELearningScreen(),
-        LoginScreen.routeName: (context) =>  LoginScreen(),
+        LoginScreen.routeName: (context) => LoginScreen(),
         HomeScreen.routeName: (context) => const HomeScreen(),
         NewsScreen.routeName: (context) => const NewsScreen(),
         SubjectDetailsScreen.routeName: (context) =>
             const SubjectDetailsScreen(),
         SubjectTableScreen.routeName: (context) => const SubjectTableScreen(),
-        StudentInfoScreen.routeName: (context) =>  StudentInfoScreen(),
+        StudentInfoScreen.routeName: (context) => StudentInfoScreen(),
         NewsDetailsScreen.routeName: (context) => NewsDetailsScreen(),
       },
     );

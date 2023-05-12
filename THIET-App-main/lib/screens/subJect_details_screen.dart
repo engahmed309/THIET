@@ -12,7 +12,7 @@ class SubjectDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
-        backgroundColor: Colors.indigo[100],
+        backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
         title: Text(
           "اسم المادة",
@@ -41,7 +41,7 @@ class SubjectDetailsScreen extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     decoration: BoxDecoration(
-                        color: Colors.indigo[100],
+                        color: Theme.of(context).primaryColor,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(100),
                           // bottomRight: Radius.circular(100),
@@ -89,7 +89,7 @@ class SubjectDetailsScreen extends StatelessWidget {
                         onPressed: () {},
                         icon: Icon(
                           Icons.upload_file_rounded,
-                          color: Colors.indigo[300],
+                          color: Theme.of(context).primaryColor,
                         ),
                         label: Text(
                           "upload pdf file",

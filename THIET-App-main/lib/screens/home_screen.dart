@@ -13,7 +13,8 @@ class HomeScreen extends StatelessWidget {
     //     (ModalRoute.of(context)?.settings.arguments ?? <dynamic>[]) ;
     //     print("data is $data");
     return Scaffold(
-      
+    //  backgroundColor: Color.fromARGB(255, 201, 161, 116),
+    
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Theme.of(context).primaryColor,
