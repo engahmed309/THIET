@@ -147,16 +147,21 @@ print(dataAuthUrl);
      // print(decode);
       Navigator.pushNamed(context, HomeScreen.routeName,
            );
-      AwesomeDialog(
+          //  showDialog(context: context, builder: (context) {
+          //    return Container(width: 300,height: 300,
+          //    child: Text("data"),);
+
+          //  },);
+//       AwesomeDialog(
         
-              title: "تم تسجيل الدخول بنجاح",
-              context: context,
-              dialogType: DialogType.success,
-              animType: AnimType.rightSlide,
-              width: 1800,   btnCancel: ElevatedButton(onPressed: (){
-Navigator.of(context).pop();
-              }, child: Text("إغلاق")))
-          .show();
+//               title: "تم تسجيل الدخول بنجاح",
+//               context: context,
+//               dialogType: DialogType.success,
+//               animType: AnimType.rightSlide,
+//               width: 1800,   btnCancel: ElevatedButton(onPressed: (){
+// Navigator.of(context).pop();
+//               }, child: Text("إغلاق")))
+//           .show();
     } else {
       AwesomeDialog(
               title: "خطأ في إدخال بيانات الاعتماد حاول مرة أخرى",

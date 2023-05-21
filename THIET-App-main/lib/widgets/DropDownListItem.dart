@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:thiet_v2/screens/test.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import '../screens/Subject_Table_screen.dart';
 
 class DropDownListItem extends StatefulWidget {
@@ -60,8 +60,7 @@ class _DropDownListItemState extends State<DropDownListItem> {
                                   Navigator.of(context)
                                       .pushNamed(SubjectTableScreen.routeName);
                                 } else if (item == "نتائج الطلاب") {
-                                  Navigator.of(context)
-                                      .pushNamed(TestScreen.routeName);
+                            launchUrl(Uri.parse("https://erp.thiet.edu.eg/"),mode: LaunchMode.inAppWebView);
                                 } else {
                                   Navigator.of(context)
                                       .pushNamed(TestScreen.routeName);

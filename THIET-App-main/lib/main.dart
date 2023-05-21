@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thiet_v2/widgets/pdf_view.dart';
 import '/screens/eLearning_screen.dart';
 import '/screens/login_screen.dart';
 import '/screens/new_screen.dart';
@@ -59,6 +60,7 @@ class _MyAppState extends State<MyApp> {
         SubjectTableScreen.routeName: (context) => const SubjectTableScreen(),
         StudentInfoScreen.routeName: (context) => StudentInfoScreen(),
         NewsDetailsScreen.routeName: (context) => NewsDetailsScreen(),
+        PdfView.routeName:(context) =>const PdfView(),
       },
     );
   }

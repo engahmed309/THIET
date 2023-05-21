@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../screens/subJect_details_screen.dart';
 
 class SubjectItem extends StatelessWidget {
+  SubjectItem({required this.subjectName});
+  final String subjectName;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -25,7 +27,8 @@ class SubjectItem extends StatelessWidget {
               height: 40,
               width: double.infinity,
               child: Text(
-                "اسم المادة",
+                subjectName,
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headline1,
               ),

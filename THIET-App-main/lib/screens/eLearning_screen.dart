@@ -42,31 +42,31 @@ class ELearningScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SubjectItem(),
+                SubjectItem(subjectName: "أساليب البرمجة المتقدمة"),
                 SizedBox(
                   width: 10,
                 ),
-                SubjectItem()
+                SubjectItem(subjectName: "الأنظمة المدمجة",)
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SubjectItem(),
+                SubjectItem(subjectName: "اتصالات المتحركات"),
                 SizedBox(
                   width: 10,
                 ),
-                SubjectItem()
+                SubjectItem(subjectName: "الذكاء الإصطناعي وتطبيقاتة",)
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SubjectItem(),
+                SubjectItem(subjectName:"مشروع 2" ),
                 SizedBox(
                   width: 10,
                 ),
-                SubjectItem()
+                SubjectItem(subjectName: "",)
               ],
             ),
           ],
